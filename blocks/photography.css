@@ -1,0 +1,45 @@
+.photography {
+  display: grid;
+  grid-template: repeat(2, 361px) / repeat(3, 282px);
+  gap: 20px 17px;
+  margin: 0 0 67px;
+}
+
+.photography__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.photography__card-image {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+}
+
+.photography__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 10px 31px 10px;
+  box-sizing: border-box;
+}
+
+.photography__info-title {
+  color: #000;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 900;
+  width: 100%;
+  margin: 0;
+}
+
+.photography__info-icon {
+  width: 21px;
+  height: 19px;
+}
