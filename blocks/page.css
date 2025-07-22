@@ -15,9 +15,20 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: normal;
   font-style: normal;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 45px auto 60px;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    max-width: 320px;
+    width: 100%;
+  }
+  .page {
+    max-width: 320px;
+    width: 100%;
+    margin: 28px auto 36px;
+  }
 }
