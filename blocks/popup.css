@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.popup_shown {
+.popup_unshown {
   display: none;
 }
 
