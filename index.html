@@ -123,7 +123,7 @@
               alt="Imagen de paisaje E"
             />
             <div class="photography__info">
-              <h2 class="photography__info-title">Vanois National...</h2>
+              <h2 class="photography__info-title">Vanois National Park</h2>
               <img
                 class="photography__info-icon"
                 src="./images/heart-outline_icon.svg"
@@ -151,6 +151,33 @@
       <footer class="footer">
         <p class="footer__copyright">© 2025 Around The U.S.</p>
       </footer>
+
+      <div class="popup popup_shown">
+        <div class="popup__container">
+          <div class="popup__content">  
+            <h2 class="popup__title">Editar perfil</h2>
+            <form class="popup__form">
+              <input
+                type="text"
+                name="name"
+                class="popup__input popup__input-name"
+                placeholder="Nombre"
+                required
+              />
+              <input
+                type="text"
+                name="about"
+                class="popup__input popup__input-about"
+                placeholder="Acerca de mí"
+                required
+              />
+              <button type="submit" class="popup__submit-button">Guardar</button>
+            </form>
+          </div>
+          <button class="popup__close-button">
+            <img src="./images/close_icon.png" alt="Cerrar" class="popup__close-button-icon" />
+          </button>
+        </div>
     </div>
   </body>
 </html>

@@ -4,7 +4,7 @@
   align-items: stretch;
   gap: 41px;
   width: 100%;
-  margin: 0 0 40px 0;
+  margin: 45px 0 40px 0;
 }
 
 .header__logo {
@@ -28,6 +28,6 @@
   .header__logo {
     max-width: 126px;
     height: 24px;
-    margin: 0 auto 0 27px;
+    margin: 28px auto 0 27px;
   }
 }
