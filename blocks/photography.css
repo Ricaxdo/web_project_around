@@ -51,6 +51,9 @@
   opacity: 0.6;
   cursor: pointer;
 }
+.photography__info-icon:active {
+  opacity: 1;
+}
 
 @media screen and (max-width: 320px) {
   .photography {
