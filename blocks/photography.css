@@ -37,6 +37,10 @@
   font-weight: 900;
   width: 100%;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 0 3px 0;
 }
 
 .photography__info-icon {
