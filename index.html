@@ -4,7 +4,7 @@
     <!--Meta tags-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Homeland - Proyecto 7 de TripleTen" />
+    <meta name="description" content="Around EE.UU. - Proyecto 7 de TripleTen" />
     <meta name="keywords" content="html, css, responsive, bem, javascript" />
     <meta name="author" content="Ricardo Castro" />
 
@@ -18,6 +18,7 @@
     <link rel="shortcut icon" href="./favicon.ico" />
   </head>
   <body>
+    <script src="./javascript/index.js" defer></script>
     <div class="page">
       <header class="header">
         <img
@@ -38,13 +39,13 @@
           </div>
           <div class="profile__info">
             <h1 class="profile__info-name">Jacques Cousteau</h1>
-            <div class="profile__info-edit_logo">
+            <button class="profile__edit-icon">
               <img
-                class="profile__info-edit-logo-image"
+                class="profile__edit-icon-image"
                 src="./images/edit-button_icon.png"
                 alt="Icono de editar"
               />
-            </div>
+            </button>
             <p class="profile__info-description">Explorador</p>
           </div>
           <button class="profile__add-button_rectangle">
@@ -123,7 +124,7 @@
               alt="Imagen de paisaje E"
             />
             <div class="photography__info">
-              <h2 class="photography__info-title">Vanois National...</h2>
+              <h2 class="photography__info-title">Vanois National Park</h2>
               <img
                 class="photography__info-icon"
                 src="./images/heart-outline_icon.svg"
@@ -151,6 +152,33 @@
       <footer class="footer">
         <p class="footer__copyright">© 2025 Around The U.S.</p>
       </footer>
+
+      <div class="popup popup_unshown">
+        <div class="popup__container">
+          <div class="popup__content">  
+            <h2 class="popup__title">Editar perfil</h2>
+            <form class="popup__form">
+              <input
+                type="text"
+                name="name"
+                class="popup__input popup__input-name"
+                placeholder="Nombre"
+                required
+              />
+              <input
+                type="text"
+                name="about"
+                class="popup__input popup__input-about"
+                placeholder="Acerca de mí"
+                required
+              />
+              <button type="submit" class="popup__submit-button">Guardar</button>
+            </form>
+          </div>
+          <button class="popup__close-button">
+            <img src="./images/close_icon.png" alt="Cerrar" class="popup__close-button-icon" />
+          </button>
+        </div>
     </div>
   </body>
 </html>
