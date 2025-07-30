@@ -1,4 +1,4 @@
-.popupPlace {
+.addPopup {
   position: fixed;
   inset: 0;
   z-index: 1000;
@@ -8,11 +8,11 @@
   align-items: center;
 }
 
-.popupPlace_unshown {
+.addPopup_unshown {
   display: none;
 }
 
-.popupPlace__container {
+.addPopup__container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,7 +20,7 @@
   display: flex;
 }
 
-.popupPlace__content {
+.addPopup__content {
   width: 430px;
   background-color: #fff;
   border-radius: 10px;
@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-.popupPlace__title {
+.addPopup__title {
   color: #000;
   font-weight: 900;
   font-size: 1.5rem;
@@ -38,7 +38,7 @@
   margin: 34px auto 54px 36px;
 }
 
-.popupPlace__form {
+.addPopup__form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
   margin: 0 auto 36px;
 }
 
-.popupPlace__input {
+.addPopup__input {
   max-width: 358px;
   width: 100%;
   padding: 0 0 13px;
@@ -56,23 +56,23 @@
   font-size: 0.875rem;
 }
 
-.popupPlace__input::placeholder {
+.addPopup__input::placeholder {
   color: #c4c4c4;
 }
 
-.popupPlace__input:focus {
+.addPopup__input:focus {
   outline: none;
 }
 
-.popupPlace__input-name {
+.addPopup__input-name {
   margin: 0 auto 30px;
 }
 
-.popupPlace__input-about {
+.addPopup__input-about {
   margin: 0 auto 46px;
 }
 
-.popupPlace__submit-button {
+.addPopup__submit-button {
   max-width: 358px;
   width: 100%;
   height: 50px;
@@ -88,12 +88,12 @@
   align-items: center;
 }
 
-.popupPlace__submit-button:hover {
+.addPopup__submit-button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
 
-.popupPlace__close-button {
+.addPopup__close-button {
   background-color: transparent;
   border: none;
   top: -45px;
@@ -104,47 +104,47 @@
   justify-content: flex-end;
 }
 
-.popupPlace__close-button-icon {
+.addPopup__close-button-icon {
   width: 40px;
   height: 40px;
 }
 
-.popupPlace__close-button-icon:hover {
+.addPopup__close-button-icon:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
 @media screen and (max-width: 320px) {
-  .popupPlace__content {
+  .addPopup__content {
     width: 282px;
   }
-  .popupPlace__container {
+  .addPopup__container {
     display: flex;
     flex-direction: column-reverse;
   }
-  .popupPlace__form {
+  .addPopup__form {
     margin: 0 auto 25px;
   }
-  .popupPlace__title {
+  .addPopup__title {
     font-size: 1.125rem;
     margin: 25px auto 76px 22px;
   }
-  .popupPlace__input {
+  .addPopup__input {
     max-width: 238px;
     padding: 0 0 9px;
   }
-  .popupPlace__close-button {
+  .addPopup__close-button {
     top: -20px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
   }
 
-  .popupPlace__close-button-icon {
+  .addPopup__close-button-icon {
     width: 26px;
     height: 26px;
   }
-  .popupPlace__submit-button {
+  .addPopup__submit-button {
     max-width: 238px;
     height: 46px;
   }

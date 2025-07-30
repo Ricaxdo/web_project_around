@@ -188,6 +188,40 @@
           </button>
         </div>
       </div>
+
+      <div class="addPopup addPopup_unshown">
+        <div class="addPopup__container">
+          <div class="addPopup__content">
+            <h2 class="addPopup__title">Agregar lugar</h2>
+            <form class="addPopup__form">
+              <input
+                type="text"
+                name="title"
+                class="addPopup__input addPopup__input-name"
+                placeholder="Titulo"
+                required
+              />
+              <input
+                type="text"
+                name="link"
+                class="addPopup__input addPopup__input-about"
+                placeholder="Enlace de la imagen"
+                required
+              />
+              <button type="submit" class="addPopup__submit-button">
+                Crear
+              </button>
+            </form>
+          </div>
+          <button class="addPopup__close-button">
+            <img
+              src="./images/close_icon.png"
+              alt="Cerrar"
+              class="addPopup__close-button-icon"
+            />
+          </button>
+        </div>
+      </div>
     </div>
     <script src="./scripts/index.js"></script>
   </body>

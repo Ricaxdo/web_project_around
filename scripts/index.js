@@ -31,3 +31,21 @@ function saveProfile(evt) {
 editButton.addEventListener("click", openEditPopup);
 editPopupCloseButton.addEventListener("click", closeEditPopup);
 editPopupSubmitButton.addEventListener("click", saveProfile);
+
+let addButton = document.querySelector(".profile__add-button-rectangle");
+let addPopup = document.querySelector(".addPopup");
+let addPopupCloseButton = document.querySelector(
+  ".addPopup__close-button-icon"
+);
+let addPopupSubmitButton = document.querySelector(".addPopup__submit-button");
+
+function openAddPopup() {
+  addPopup.classList.remove("addPopup_unshown");
+}
+
+function closeAddPopup() {
+  addPopup.classList.add("addPopup_unshown");
+}
+
+addButton.addEventListener("click", openAddPopup);
+addPopupCloseButton.addEventListener("click", closeAddPopup);
