@@ -53,9 +53,6 @@
   opacity: 0.6;
   cursor: pointer;
 }
-.photography__info-icon:active {
-  opacity: 1;
-}
 
 .photography__trash-icon {
   width: 18px;

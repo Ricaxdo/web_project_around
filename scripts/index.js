@@ -75,6 +75,16 @@ function addPhotographyCard(titleValue, linkValue) {
   ).alt = `Imagen de ${titleValue}`;
 
   cardElement
+    .querySelector(".photography__info-icon")
+    .addEventListener("click", function (evt) {
+      const icon = evt.target;
+      const isActive = icon.classList.toggle("photography__info-icon_active");
+      icon.src = isActive
+        ? "./images/heart_icon.svg"
+        : "./images/heart-outline_icon.svg";
+    });
+
+  cardElement
     .querySelector(".photography__trash-icon")
     .addEventListener("click", deletePhotographyCard);
 
