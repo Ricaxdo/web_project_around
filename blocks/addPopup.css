@@ -64,11 +64,11 @@
   outline: none;
 }
 
-.addPopup__input-name {
+.addPopup__input-title {
   margin: 0 auto 30px;
 }
 
-.addPopup__input-about {
+.addPopup__input-link {
   margin: 0 auto 46px;
 }
 

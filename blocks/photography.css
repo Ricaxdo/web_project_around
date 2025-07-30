@@ -1,6 +1,7 @@
 .photography {
   display: grid;
-  grid-template: repeat(2, 361px) / repeat(3, 282px);
+  grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+  grid-auto-rows: auto;
   gap: 20px 17px;
   margin: 0 0 67px;
 }
@@ -12,11 +13,12 @@
   border-radius: 10px;
   overflow: hidden;
   box-sizing: border-box;
+  position: relative;
 }
 
 .photography__card-image {
-  max-width: 282px;
-  max-height: 282px;
+  width: 282px;
+  height: 282px;
   object-fit: cover;
 }
 
@@ -53,6 +55,19 @@
 }
 .photography__info-icon:active {
   opacity: 1;
+}
+
+.photography__trash-icon {
+  width: 18px;
+  height: 19px;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+}
+
+.photography__trash-icon:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 320px) {
