@@ -44,7 +44,6 @@
   opacity: 0.6;
 }
 
-/* Responsivo para pantallas pequeñas */
 @media screen and (max-width: 480px) {
   .imagePopup__close-button {
     top: -30px;
