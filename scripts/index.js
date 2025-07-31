@@ -88,6 +88,15 @@ function addPhotographyCard(titleValue, linkValue) {
     .querySelector(".photography__trash-icon")
     .addEventListener("click", deletePhotographyCard);
 
+  cardElement
+    .querySelector(".photography__card-button")
+    .addEventListener("click", function () {
+      const popupImage = document.querySelector(".imagePopup__image");
+      popupImage.src = linkValue;
+      popupImage.alt = `Imagen de ${titleValue}`;
+      imagePopup.classList.remove("imagePopup_unshown");
+    });
+
   photographyContainer.append(cardElement);
 }
 
@@ -133,3 +142,17 @@ const initialCards = [
 initialCards.forEach(function (card) {
   addPhotographyCard(card.title, card.link);
 });
+
+let imagePopup = document.querySelector(".imagePopup");
+let imagePopupCloseButton = document.querySelector(
+  ".imagePopup__close-button-icon"
+);
+
+function openImagePopup() {
+  imagePopup.classList.remove("imagePopup_unshown");
+}
+function closeImagePopup() {
+  imagePopup.classList.add("imagePopup_unshown");
+}
+
+imagePopupCloseButton.addEventListener("click", closeImagePopup);

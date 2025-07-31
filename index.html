@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <!--Meta tags-->
     <meta charset="UTF-8" />
@@ -59,14 +59,17 @@
           </button>
         </section>
 
-        <!-- Photography Section / Se eliminaron y se usa el template -->
-        <section class="photography"></section>
+        <!-- Photography Section / Se elimino hardcode y se usa el template -->
+        <section class="photography">
+          <h2 class="photography__heading" hidden>Galería de fotos</h2>
+        </section>
       </main>
 
       <template id="photography-card-template">
         <div class="photography__card">
-          <img class="photography__card-image" src="" alt="" />
-          <img
+          <button class="photography__card-button">
+            <img class="photography__card-image" src="" alt="" /></button
+          ><img
             class="photography__trash-icon"
             src="./images/trash_icon.svg"
             alt=""
@@ -149,6 +152,23 @@
               src="./images/close_icon.png"
               alt="Cerrar"
               class="addPopup__close-button-icon"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="imagePopup imagePopup_unshown">
+        <div class="imagePopup__container">
+          <img
+            class="imagePopup__image"
+            src="./images/placeholder.png"
+            alt="Vista previa"
+          />
+          <button class="imagePopup__close-button">
+            <img
+              src="./images/close_icon.png"
+              alt="Cerrar"
+              class="imagePopup__close-button-icon"
             />
           </button>
         </div>

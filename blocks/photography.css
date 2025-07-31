@@ -45,6 +45,16 @@
   padding: 0 0 3px 0;
 }
 
+.photography__card-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin: 0;
+  width: 282px;
+  height: 282px;
+}
+
 .photography__info-icon {
   width: 21px;
   height: 19px;
